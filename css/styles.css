@@ -170,7 +170,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 264px;
   height: 112px;
   background-color: #f4f4fd;
   margin-bottom: 8px;
@@ -178,7 +177,6 @@ body {
 .services-icon-item {
   width: 64px;
   height: 64px;
-  margin: 24px 102px;
 }
 .services-list {
   display: flex;
@@ -258,9 +256,13 @@ body {
   margin-bottom: 8px;
 }
 .team-social-container {
+}
+.team-social-list {
   display: flex;
   gap: 24px;
   justify-content: center;
+}
+.team-social-item {
 }
 .team-social-link {
   display: flex;
@@ -283,8 +285,6 @@ body {
 .customers {
   padding: 130px 0 120px;
 }
-.customers-container {
-}
 .customers-subtitle {
   font-size: 36px;
   line-height: 1.11;
@@ -300,6 +300,13 @@ body {
   align-items: center;
 }
 .customers-item {
+}
+.customers-item:is(:hover, :focus) {
+  border: 1px solid #404bbf;
+  border-radius: 4px;
+}
+
+.customers-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -308,13 +315,7 @@ body {
   width: 168px;
   height: 88px;
 }
-.customers-item:is(:hover, :focus) {
-  border: 1px solid #404bbf;
-}
-
-.customers-link {
-}
-.customers-link:is(:hover, :focus) .customers-icon {
+.customers-link:is(:hover, :focus) {
   fill: #404bbf;
 }
 .customers-icon {
