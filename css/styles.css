@@ -256,8 +256,6 @@ body {
   color: var(--text-color);
   margin-bottom: 8px;
 }
-.team-social-container {
-}
 .team-social-list {
   display: flex;
   gap: 24px;
@@ -278,9 +276,8 @@ body {
   background-color: #404bbf;
 }
 .team-social-icon {
-  width: 12px;
-  height: 12px;
-  margin: 12px 12px;
+  width: 16px;
+  height: 16px;
 }
 /*---------------customers---------------*/
 .customers {
@@ -302,7 +299,7 @@ body {
 }
 .customers-item {
 }
-.customers-item:is(:hover, :focus) {
+.customers-item:focus {
   border: 1px solid #404bbf;
   border-radius: 4px;
 }
@@ -316,7 +313,6 @@ body {
   width: 168px;
   height: 88px;
   color: #8e8f99;
-  border: 1px solid #8e8f99;
 }
 .customers-link:is(:hover, :focus) {
   color: #404bbf;
@@ -371,7 +367,7 @@ body {
 }
 .footer-social-item {
 }
-.footer-social-item:is(:hover, :focus) {
+.footer-social-item:focus {
   background-color: #31d0aa;
 }
 .footer-social-link {
@@ -385,9 +381,8 @@ body {
   color: #f4f4fd;
 }
 .footer-social-icon {
-  width: 12px;
-  height: 12px;
-  margin: 12px 12px;
+  width: 24px;
+  height: 24px;
 }
 
 /*---------------portfolio---------------*/
@@ -441,12 +436,17 @@ body {
 }
 .portfolio-pictures-link {
 }
+.portfolio-pictures-link:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .portfolio-pictures-item {
 }
 .portfolio-title {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 8px;
+  color: #2e2f42;
 }
 .portfolio-description {
   color: var(--text-color);
